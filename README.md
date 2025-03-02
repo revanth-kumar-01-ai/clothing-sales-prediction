@@ -13,11 +13,16 @@ This project builds **Decision Tree** 🌳 and **Random Forest** 🌲 models to 
 8️⃣ **Update** 🚀 `main.py`  
 9️⃣ **Update** 🌐 `app.py`  
 
-## 📌 Features  
-✅ Sales data preprocessing 🧹  
-✅ Decision Tree 🌳🌲  
-✅ Feature importance analysis 🔍  
-✅ Model evaluation & performance metrics 📊  
-✅ Scalable & modular code structure 🏗️  
+## 📌 **CRISP Methodology**  
+✅ **Business & Data Understanding** 📊🔍  
+✅ **Data Preparation** 🧹📂  
+✅ **Model Building** 🤖⚙️  
+✅ **Model Evaluation** 📈✅  
+✅ **Model Deployment** 🚀💻  
+✅ **Maintenance & Monitoring** 🛠️👀  
 
-## 📂 Project Structure  
+## 📂 **Business & Data Understanding**  
+
+### 📌 **Problem Statement**  
+A **cloth manufacturing company** 🏭 wants to identify key attributes that contribute to **high sales** 📈. The goal is to build **Decision Tree** 🌳 and **Random Forest** 🌲 models, with **Sales** as the **target variable**, which must first be **converted into a categorical variable** 🎯.  
+
