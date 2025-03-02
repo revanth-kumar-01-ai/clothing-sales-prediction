@@ -15,7 +15,7 @@ This project builds **Decision Tree** 🌳 and **Random Forest** 🌲 models to 
 
 ## 📌 Features  
 ✅ Sales data preprocessing 🧹  
-✅ Decision Tree & Random Forest models 🌳🌲  
+✅ Decision Tree 🌳🌲  
 ✅ Feature importance analysis 🔍  
 ✅ Model evaluation & performance metrics 📊  
 ✅ Scalable & modular code structure 🏗️  
