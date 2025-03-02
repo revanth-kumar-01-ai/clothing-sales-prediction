@@ -52,4 +52,4 @@ The dataset is provided by a **trusted institute** 🏛️ and contains:
 - **Age** 🎂 – Customer’s age group  
 - **Education** 🎓 – Years of education  
 - **Urban** 🏙️ – Urban or rural location  
-- **US** 🇺🇸 – Customer in the US  
+- **US** 🇺🇸 – Customer in the US
