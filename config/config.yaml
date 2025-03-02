@@ -1,0 +1,6 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_query: SELECT * FROM ClothesDB.clothingsSales
+  load_data: artifacts/data_ingestion/clothesDataset.csv
