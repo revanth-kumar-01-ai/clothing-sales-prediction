@@ -3,7 +3,7 @@ import warnings
 
 from clothing_sales_prediction.constants import *
 from clothing_sales_prediction.utils.common import read_yaml, create_directories 
-from clothing_sales_prediction.entity.config_entity import (DataIngestionConfig, DataPreprocessingConfig, DataValidationConfig, DataSplittingConfig)
+from clothing_sales_prediction.entity.config_entity import (DataIngestionConfig, DataPreprocessingConfig, DataValidationConfig, DataSplittingConfig, ModelTrainerConfig)
 
 warnings.filterwarnings('ignore')
 
@@ -87,3 +87,26 @@ class ConfigurationManager:
         )
 
         return data_splitting_config
+    
+    # model training 
+    def get_model_training(self) -> ModelTrainerConfig:
+        
+        config = self.config.model_trainer
+        DecisionTreeParams = self.params.DecisionTree
+        RandomForestParams = self.params.RandomForest
+        target = self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_trainer_config = ModelTrainerConfig(
+            root_dir = config.root_dir,
+            train_data_path = config.train_data_path,
+            test_data_path = config.test_data_path, 
+            DecisionTree = config.DecisionTree,  # model path don't confuse 
+            RandomForest= config.RandomForest,   # model path don't confuse 
+            DTParams = DecisionTreeParams, # this params 
+            RFParams = RandomForestParams, # this params
+            target_column = target.name
+        )
+
+        return model_trainer_config

@@ -1,1 +1,13 @@
-key: params
+DecisionTree:
+  criterion: gini
+  max_depth: 10
+  min_samples_split: 10
+  min_samples_leaf: 10
+  random_state: 42
+
+RandomForest:
+  max_depth: 10
+  min_samples_split: 10
+  min_samples_leaf: 10
+  n_estimators: 500
+  random_state: 42

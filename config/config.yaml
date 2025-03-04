@@ -22,3 +22,9 @@ data_splitting:
   trainData: artifacts/data_splitting/train.csv
   testData: artifacts/data_splitting/test.csv
   
+model_trainer:
+  root_dir: artifacts/model_trainer
+  train_data_path: artifacts/data_splitting/train.csv
+  test_data_path: artifacts/data_splitting/test.csv
+  DecisionTree: artifacts/model_trainer/DecisionTree.joblib
+  RandomForest: artifacts/model_trainer/RandomForest.joblib

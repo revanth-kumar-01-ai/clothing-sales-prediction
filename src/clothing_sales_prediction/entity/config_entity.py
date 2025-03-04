@@ -33,3 +33,21 @@ class DataSplittingConfig:
     cleanData: Path
     trainData: Path
     testData: Path
+
+# model trainer 
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path
+
+    # Decision tree 
+    DecisionTree: Path
+    DTParams: dict
+
+    # Random Forest 
+    RandomForest: Path
+    RFParams: dict
+
+    # Target column
+    target_column: str
