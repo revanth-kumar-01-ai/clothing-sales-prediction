@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(layout = 'wide', page_title = '👕 Cloth Sales prediction 👕')
 
 home = st.Page(
-    page = "../clothing-sales-prediction/Streamlit/ViewPage/Home.py", 
+    page = "/Streamlit/ViewPage/Home.py", 
     title = "Home", 
     icon = '🏠' 
 )
