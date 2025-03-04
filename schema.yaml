@@ -1,1 +1,16 @@
-key: schema
+COLUMNS:
+  category__ShelveLoc_Good : float64
+  category__ShelveLoc_Medium : float64
+  category__Urban_Yes : float64
+  category__US_Yes : float64
+  remainder__CompPrice : float64
+  remainder__Income : float64
+  remainder__Advertising : float64
+  remainder__Population : float64
+  remainder__Price : float64
+  remainder__Age : float64
+  remainder__Education : float64
+  remainder__Sales : float64
+
+TARGET_COLUMN:
+  name: remainder__Sales
