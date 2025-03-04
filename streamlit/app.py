@@ -32,7 +32,7 @@ conclusion = st.Page(
     icon = '🔍' 
 )
 
-st.logo('./assets/logo.png', size = 'large')
+st.logo('assets/logo.png', size = 'large')
 
 pg = st.navigation({
     "cloths":[home, dataExploration, modelTraining, prediction, conclusion]
