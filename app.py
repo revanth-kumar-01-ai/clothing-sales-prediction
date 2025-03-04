@@ -1,9 +1,6 @@
 import streamlit as st
-from Streamlit import config
 
-st.set_page_config(layout = 'wide', page_title = config.PROJECT_NAME)
-
-print(config.PROJECT_NAME)
+st.set_page_config(layout = 'wide', page_title = '👕 Cloth Sales prediction 👕')
 
 home = st.Page(
     page = "./Streamlit/ViewPage/Home.py", 
@@ -38,7 +35,8 @@ conclusion = st.Page(
 st.logo('./Streamlit/assets/logo.png', size = 'large')
 
 pg = st.navigation({
-    config.PROJECT_NAME:[home, dataExploration, modelTraining, prediction, conclusion],
+    '👕 Cloth Sales prediction 👕':[home, dataExploration, modelTraining, prediction, conclusion],
+    
 
 })
 
