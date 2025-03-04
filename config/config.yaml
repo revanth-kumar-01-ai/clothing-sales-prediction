@@ -16,4 +16,9 @@ data_validation:
   cleanDataset: artifacts/data_preprocessing/cleanDataset.csv
   STATUS_FILE: artifacts/data_validation/status.txt
 
+data_splitting:
+  root_dir: artifacts/data_splitting
+  cleanData: artifacts/data_preprocessing/cleanDataset.csv
+  trainData: artifacts/data_splitting/train.csv
+  testData: artifacts/data_splitting/test.csv
   

@@ -3,7 +3,7 @@ import warnings
 
 from clothing_sales_prediction.constants import *
 from clothing_sales_prediction.utils.common import read_yaml, create_directories 
-from clothing_sales_prediction.entity.config_entity import (DataIngestionConfig, DataPreprocessingConfig, DataValidationConfig)
+from clothing_sales_prediction.entity.config_entity import (DataIngestionConfig, DataPreprocessingConfig, DataValidationConfig, DataSplittingConfig)
 
 warnings.filterwarnings('ignore')
 
@@ -70,5 +70,20 @@ class ConfigurationManager:
             all_schema=schema,
         )
 
-
         return data_validation_config
+    
+    # Data Splitting  
+    def get_data_splitting_config(self) -> DataSplittingConfig:
+        
+        config = self.config.data_splitting
+
+        create_directories([config.root_dir])
+
+        data_splitting_config = DataSplittingConfig(
+            root_dir=config.root_dir, 
+            cleanData=config.cleanData,
+            testData=config.testData, 
+            trainData=config.trainData
+        )
+
+        return data_splitting_config

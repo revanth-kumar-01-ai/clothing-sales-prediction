@@ -25,3 +25,11 @@ class DataValidationConfig:
     STATUS_FILE: str
     cleanDataset: Path
     all_schema: dict
+
+# data Splitting 
+@dataclass(frozen=True)
+class DataSplittingConfig:
+    root_dir: Path
+    cleanData: Path
+    trainData: Path
+    testData: Path

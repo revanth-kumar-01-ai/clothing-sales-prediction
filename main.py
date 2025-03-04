@@ -3,6 +3,7 @@ from clothing_sales_prediction import logger
 from clothing_sales_prediction.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeLine
 from clothing_sales_prediction.pipeline.stage_02_data_preprocessing import DataPreprocessingTrainingPipeLine
 from clothing_sales_prediction.pipeline.stage_03_data_validation import DataValidationTrainingPipeLine
+from clothing_sales_prediction.pipeline.stage_04_data_splitting import DataSplittingTrainingPipeLine
 
 """
 Data ingestion from the mySQL database     
@@ -36,13 +37,27 @@ except Exception as e:
         raise e
 
 
-""" Data validation checking fro if all columns are their not not """
+""" Validating data to check if all required columns are present. """
 
 STAGE_NAME = "Data Validation Stage"
 
 try:
    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
    data_validation = DataValidationTrainingPipeLine()
+   data_validation.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+""" Dataset splitting train and test """
+
+STAGE_NAME = "Data splitting Stage"
+
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   data_validation = DataSplittingTrainingPipeLine()
    data_validation.main()
    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
