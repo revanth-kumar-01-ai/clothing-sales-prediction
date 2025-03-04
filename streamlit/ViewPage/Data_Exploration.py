@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-
-
 st.title("Data Exploration - Loan")
 
 # Show first 5 rows
