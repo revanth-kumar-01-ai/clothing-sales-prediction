@@ -36,3 +36,9 @@ model_evaluation:
   DecisionTreeModel: artifacts/model_trainer/DecisionTree.joblib
   RandomForestModel: artifacts/model_trainer/RandomForest.joblib
   metric_file_name: artifacts/model_evaluation
+
+prediction:
+  root_dir: artifacts/prediction
+  DecisionTreeModel: artifacts/model_trainer/DecisionTree.joblib
+  RandomForestModel: artifacts/model_trainer/RandomForest.joblib
+

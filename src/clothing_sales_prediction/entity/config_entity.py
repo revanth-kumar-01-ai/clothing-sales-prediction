@@ -67,3 +67,13 @@ class ModelEvaluationConfig:
     target_column: str # target column
     mlflow_uri: str 
 
+
+# prediction
+@dataclass(frozen=True)
+class ModelPredictionConfig:
+    root_dir: Path
+    DecisionTreeModel: Path # decision tree model 
+    RandomForestModel: Path # random forest model 
+    
+
+

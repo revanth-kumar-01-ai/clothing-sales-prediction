@@ -3,7 +3,7 @@ import warnings
 
 from clothing_sales_prediction.constants import *
 from clothing_sales_prediction.utils.common import read_yaml, create_directories 
-from clothing_sales_prediction.entity.config_entity import (DataIngestionConfig, DataPreprocessingConfig, DataValidationConfig, DataSplittingConfig, ModelTrainerConfig, ModelEvaluationConfig)
+from clothing_sales_prediction.entity.config_entity import (DataIngestionConfig, DataPreprocessingConfig, DataValidationConfig, DataSplittingConfig, ModelTrainerConfig, ModelEvaluationConfig, ModelPredictionConfig)
 
 warnings.filterwarnings('ignore')
 
@@ -136,3 +136,19 @@ class ConfigurationManager:
 
         return model_evaluation_config
     
+    # prediction
+    def get_model_prediction(self) -> ModelPredictionConfig:
+
+        config = self.config.prediction
+
+        create_directories([config.root_dir])
+
+        model_prediction_config = ModelPredictionConfig(
+            root_dir=config.root_dir,
+            DecisionTreeModel = config.DecisionTreeModel,
+            RandomForestModel = config.RandomForestModel,
+        )
+
+        return model_prediction_config
+
+
