@@ -51,3 +51,19 @@ class ModelTrainerConfig:
 
     # Target column
     target_column: str
+
+
+# model evaluation
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    test_data_path: Path
+    DecisionTreeModel: Path # decision tree model 
+    RandomForestModel: Path # random forest model 
+    DFParams: dict # params
+    RFParams: dict # params
+    metric_file_name: Path # model output 
+    target_column: str # target column
+    mlflow_uri: str 
+

@@ -53,3 +53,16 @@ The dataset is provided by a **trusted institute** 🏛️ and contains:
 - **Education** 🎓 – Years of education  
 - **Urban** 🏙️ – Urban or rural location  
 - **US** 🇺🇸 – Customer in the US
+
+# 🚀 MLflow Tracking
+
+MLflow is used to log experiments and track models with different parameters. Some key tracking features:
+
+- 📊 **HyperParameters**: Logs values such as learning rate, batch size, etc.  
+- 📈 **Metrics**: Records accuracy, F1-score, recall, and precision evaluation metrics.  
+
+🚀🔥 **This is my tracking ID, click below to view it!**  
+
+[![MLflow](https://img.shields.io/badge/MLflow-0250A3?style=for-the-badge&logo=mlflow&logoColor=white)](https://mlflow.org/)  
+
+

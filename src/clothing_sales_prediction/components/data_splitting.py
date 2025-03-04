@@ -14,7 +14,7 @@ class DataSplitting:
     
     def train_test_spiting(self, data):
         # Split the data into training and test sets. (0.75, 0.25) split.
-        train, test = train_test_split(data, test_size = 0.2)
+        train, test = train_test_split(data, test_size = 0.2, random_state = 42)
 
         train.to_csv(self.config.trainData, index = False)
         test.to_csv(self.config.testData ,index = False)

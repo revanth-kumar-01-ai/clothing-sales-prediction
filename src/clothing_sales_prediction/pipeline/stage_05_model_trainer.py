@@ -2,7 +2,7 @@
 import warnings  
 
 from clothing_sales_prediction.config.configuration import ConfigurationManager
-from clothing_sales_prediction.components.data_modelTrainer import ModelTrainer
+from clothing_sales_prediction.components.modelTrainer import ModelTrainer
 from clothing_sales_prediction import logger 
 
 warnings.filterwarnings('ignore')

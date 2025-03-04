@@ -28,3 +28,11 @@ model_trainer:
   test_data_path: artifacts/data_splitting/test.csv
   DecisionTree: artifacts/model_trainer/DecisionTree.joblib
   RandomForest: artifacts/model_trainer/RandomForest.joblib
+
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  test_data_path: artifacts/data_splitting/test.csv
+  DecisionTreeModel: artifacts/model_trainer/DecisionTree.joblib
+  RandomForestModel: artifacts/model_trainer/RandomForest.joblib
+  metric_file_name: artifacts/model_evaluation

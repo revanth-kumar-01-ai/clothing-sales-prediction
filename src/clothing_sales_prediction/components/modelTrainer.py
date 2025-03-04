@@ -45,5 +45,6 @@ class ModelTrainer:
         )
 
         modelRF.fit(train_x, train_y)  
-        joblib.dump(modelDT, self.config.RandomForest)
+        joblib.dump(modelRF, self.config.RandomForest)
         logger.info("Random Forest model successfully built.")
+        
