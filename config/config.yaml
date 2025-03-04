@@ -4,3 +4,12 @@ data_ingestion:
   root_dir: artifacts/data_ingestion
   source_query: SELECT * FROM ClothesDB.clothingsSales
   load_data: artifacts/data_ingestion/clothesDataset.csv
+
+data_preprocessing:
+  root_dir: artifacts/data_preprocessing
+  clothSalesDataset: artifacts/data_ingestion/clothesDataset.csv
+  load_data: artifacts/data_preprocessing/cleanDataset.csv
+  preprocessModel: artifacts/data_preprocessing/preprocess.joblib
+
+
+  

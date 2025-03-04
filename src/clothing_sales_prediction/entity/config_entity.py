@@ -8,3 +8,11 @@ class DataIngestionConfig:
     source_query: str  
     load_data: Path
 
+
+# data preprocessing 
+@dataclass(frozen=True)
+class DataPreprocessingConfig:
+    root_dir: Path
+    clothSalesDataset: Path
+    load_data: Path
+    preprocessModel: Path
