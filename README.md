@@ -64,3 +64,25 @@ MLflow is used to log experiments and track models with different parameters. So
 🚀🔥 **This is my tracking ID, click below to view it!**  
 
 [![MLflow](https://img.shields.io/badge/MLflow-0250A3?style=for-the-badge&logo=mlflow&logoColor=white)](https://dagshub.com/revanth-kumar-01-ai/clothing-sales-prediction.mlflow)
+
+
+# 📊 Model Performance Comparison
+
+Below is the performance comparison between **Decision Tree** and **Random Forest** classifiers.
+
+## 🔥 Model Performance Metrics
+
+| Metric            | Decision Tree | Random Forest |
+|------------------|--------------|--------------|
+| **Accuracy**     | 0.800        | 0.875        |
+| **Precision**    | 0.8139       | 0.8837       |
+| **Recall**       | 0.8139       | 0.8837       |
+| **F1-Score**     | 0.8139       | 0.8837       |
+
+## ✅ Why Random Forest is Better?
+Random Forest outperforms the Decision Tree in all metrics:
+- **Higher Accuracy** 📈 (87.5% vs 80.0%)
+- **Better Precision, Recall & F1-Score** 🎯
+- **More Robust & Generalized** ✅ (Reduces overfitting by averaging multiple trees)
+
+🚀 **Conclusion**: Since Random Forest gives the best accuracy and balanced performance, it is the preferred model for prediction tasks.
