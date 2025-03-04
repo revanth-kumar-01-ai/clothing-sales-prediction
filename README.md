@@ -63,6 +63,4 @@ MLflow is used to log experiments and track models with different parameters. So
 
 🚀🔥 **This is my tracking ID, click below to view it!**  
 
-[![MLflow](https://dagshub.com/revanth-kumar-01-ai/clothing-sales-prediction.mlflow)](https://mlflow.org/)  
-
-
+[![MLflow](https://img.shields.io/badge/MLflow-0250A3?style=for-the-badge&logo=mlflow&logoColor=white)](https://dagshub.com/revanth-kumar-01-ai/clothing-sales-prediction.mlflow)
